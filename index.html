@@ -2,9 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Home</title>
+  <title>Ramesh Kottamasu</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <p><a href="about.html">About Me</a></p>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <h1>Your Name</h1>
+      <p>Your brief tagline or introduction goes here.</p>
+    </section>
+    <section id="about">
+      <h2>About</h2>
+      <p>Use this section to write a short bio about yourself.</p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project-item">Project placeholder</div>
+        <div class="project-item">Another project placeholder</div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Reach out at <a href="mailto:email@example.com">email@example.com</a>.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+  <script>
+    const yearEl = document.getElementById('year');
+    yearEl.textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
