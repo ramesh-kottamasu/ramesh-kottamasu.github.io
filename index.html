@@ -11,6 +11,7 @@
   <header class="site-header">
     <nav class="navbar container">
       <a href="#home" class="nav-logo">RK</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -58,9 +59,6 @@
   <footer class="site-footer">
     <p>&copy; <span id="year"></span> Ramesh Kottamasu. All rights reserved.</p>
   </footer>
-  <script>
-    const yearEl = document.getElementById('year');
-    yearEl.textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
