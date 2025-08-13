@@ -2,44 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ramesh Kottamasu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="#home" class="nav-logo">RK</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
-  <main>
-    <section id="home" class="hero">
-      <img src="images/profile.jpeg" alt="Ramesh Kottamasu" class="profile-pic">
+  <section id="home" class="hero">
+    <div class="hero-content">
       <h1>Ramesh Kottamasu</h1>
       <p>Quant for correlation traded products in credit at Citi.</p>
-    </section>
-    <section id="about">
-      <h2>About</h2>
-      <p>With a decade of experience in structuring and modeling rates &amp; credit derivatives, I currently lead as Quant for correlation traded products in credit at Citi. I excel in solving critical financial challenges through advanced C++ and Python coding, statistical analysis, and stochastic calculus. Passionate about innovation and continuous learning, I thrive on developing robust models that drive strategic decision-making. I enjoy attending industry events and connecting with fellow professionals to exchange insights and explore new opportunities.</p>
-    </section>
-    <section id="projects">
+    </div>
+  </section>
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="images/profile.jpeg" alt="Ramesh Kottamasu">
+        </div>
+        <div class="about-text">
+          <h2>About</h2>
+          <p>With a decade of experience in structuring and modeling rates &amp; credit derivatives, I currently lead as Quant for correlation traded products in credit at Citi. I excel in solving critical financial challenges through advanced C++ and Python coding, statistical analysis, and stochastic calculus. Passionate about innovation and continuous learning, I thrive on developing robust models that drive strategic decision-making. I enjoy attending industry events and connecting with fellow professionals to exchange insights and explore new opportunities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="section">
+    <div class="container">
       <h2>Projects</h2>
       <div class="project-list">
         <div class="project-item">Project placeholder</div>
         <div class="project-item">Another project placeholder</div>
       </div>
-    </section>
-    <section id="contact">
+    </div>
+  </section>
+  <section id="contact" class="section">
+    <div class="container">
       <h2>Contact</h2>
       <p>Reach out at <a href="mailto:ramesh88k@gmail.com">ramesh88k@gmail.com</a>.</p>
       <p><a class="linkedin-button" href="https://www.linkedin.com/in/rameshkottamasu/" target="_blank" rel="noopener">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M100.28 448H7.4V148.9h92.88zm-46.14-341C24.36 107 0 82.6 0 52.2 0 23.3 24.36 0 54.14 0s54.1 23.3 54.1 52.2c-.1 30.4-24.46 54.8-54.1 54.8zM447.9 448h-92.8V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.5V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.6-48.3 87.8-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
         LinkedIn</a></p>
-    </section>
-  </main>
-  <footer>
+    </div>
+  </section>
+  <footer class="site-footer">
     <p>&copy; <span id="year"></span> Ramesh Kottamasu. All rights reserved.</p>
   </footer>
   <script>
