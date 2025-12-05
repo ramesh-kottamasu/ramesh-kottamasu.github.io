@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ramesh Kottamasu</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="navbar container">
       <a href="#home" class="nav-logo">RK</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -23,7 +24,11 @@
   <section id="home" class="hero">
     <div class="hero-content">
       <h1>Ramesh Kottamasu</h1>
-      <p>Quant for correlation traded products in credit at Citi.</p>
+      <p class="hero-subtitle">I build models for finance — <span id="typed"></span></p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="/RameshKottamasu_CV.pdf" target="_blank">Download CV</a>
+        <a class="btn btn-outline" href="mailto:ramesh88k@gmail.com">Contact</a>
+      </div>
     </div>
   </section>
   <section id="about" class="about section">
@@ -49,8 +54,22 @@
         <div class="section-line"></div>
       </div>
       <div class="project-list">
-        <div class="project-item">Project placeholder</div>
-        <div class="project-item">Another project placeholder</div>
+        <article class="project-card">
+          <div class="project-screenshot" style="background-image:url('images/project1.png')"></div>
+          <div class="project-body">
+            <h3>Project placeholder</h3>
+            <p class="project-desc">Short summary of the project, tech stack and outcome.</p>
+            <div class="project-tags"><span>Python</span><span>C++</span><span>Quant</span></div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-screenshot" style="background-image:url('images/project2.png')"></div>
+          <div class="project-body">
+            <h3>Another project placeholder</h3>
+            <p class="project-desc">Short summary of the project, tech stack and outcome.</p>
+            <div class="project-tags"><span>ML</span><span>Time Series</span></div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -119,9 +138,6 @@
   <footer class="site-footer">
     <p>&copy; <span id="year"></span> Ramesh Kottamasu. All rights reserved.</p>
   </footer>
-  <script>
-    const yearEl = document.getElementById('year');
-    yearEl.textContent = new Date().getFullYear();
-  </script>
+  <script src="assets/js/interactive.js"></script>
 </body>
 </html>
