@@ -84,7 +84,7 @@ body {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 70vh;
   padding-top: 4rem;
   display: flex;
   align-items: center;
@@ -107,6 +107,7 @@ body {
   font-weight: 800;
 }
 
+.hero-title-sub { font-size: 1.1rem; color: var(--muted); margin-bottom: 0.5rem; }
 .hero-subtitle { font-size: 1.15rem; color: var(--muted); }
 .hero-subtitle #typed { color: var(--primary); font-weight:600; }
 .hero-ctas { margin-top: 1rem; display:flex; gap:0.75rem; justify-content:center; }
@@ -142,6 +143,20 @@ body {
 
 .about-text {
   flex: 2 1 300px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.skill-tag {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  background: var(--card);
+  border: 1px solid var(--muted);
+  color: var(--text);
 }
 
 .project-list {
@@ -221,6 +236,10 @@ body {
 }
 
 .education-list .education-item {
+  margin-bottom: 2rem;
+}
+
+.certifications-list .certification-item {
   margin-bottom: 2rem;
 }
 
