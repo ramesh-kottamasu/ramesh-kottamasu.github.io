@@ -298,6 +298,9 @@ body {
 .contact-icon svg {
   width: 28px;
   height: 28px;
+  max-width: 28px;
+  max-height: 28px;
+  flex-shrink: 0;
   fill: #ffffff;
 }
 
