@@ -113,13 +113,13 @@ body {
 .hero-ctas { margin-top: 1rem; display:flex; gap:0.75rem; justify-content:center; }
 .btn { display:inline-block; padding:0.6rem 1rem; border-radius:8px; text-decoration:none; font-weight:600; }
 .btn-primary { background:var(--primary); color:white; }
-.btn-outline { background:transparent; border:1px solid rgba(0,0,0,0.08); color:var(--text); }
+.btn-outline { background:transparent; border:1px solid var(--muted); color:var(--text); }
 
 .btn, .project-card { transition: transform 160ms ease, box-shadow 160ms ease; }
 
 .section {
   padding: 4rem 0;
-  background: var(--light);
+  background: var(--bg);
 }
 
 .about-grid {
@@ -197,7 +197,7 @@ body {
 
 .section-header h2 { color:var(--text); }
 
-.site-footer { background: transparent; color: var(--muted); }
+.site-footer { text-align: center; padding: 2rem 1rem; background: var(--card); color: var(--muted); }
 
 .timeline-item::before { background:var(--primary); }
 
@@ -227,7 +227,7 @@ body {
   position: relative;
   margin-left: 1rem;
   padding-left: 1rem;
-  border-left: 2px solid #ddd;
+  border-left: 2px solid var(--muted);
 }
 
 .timeline-item {
@@ -248,7 +248,7 @@ body {
 
 .timeline-date {
   font-size: 0.9rem;
-  color: #555;
+  color: var(--muted);
 }
 
 .education-list .education-item {
@@ -259,12 +259,6 @@ body {
   margin-bottom: 2rem;
 }
 
-.site-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  background: var(--dark);
-  color: var(--light);
-}
 
 /* ===== Contact Section ===== */
 .contact-intro {
@@ -309,9 +303,3 @@ body {
   background-color: var(--primary);
 }
 
-@media (max-width: 768px) {
-  .about-grid {
-    flex-direction: column;
-    text-align: center;
-  }
-}
