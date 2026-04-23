@@ -194,6 +194,8 @@ body {
 .project-body { padding:1rem; }
 .project-tags { margin-top:0.75rem; display:flex; gap:0.5rem; flex-wrap:wrap; }
 .project-tags span { background:var(--glass); color:var(--text); padding:0.25rem 0.5rem; border-radius:6px; font-size:0.8rem; }
+.project-links { margin-top:1rem; display:flex; gap:0.5rem; flex-wrap:wrap; }
+.btn-sm { padding:0.35rem 0.85rem; font-size:0.82rem; }
 
 .section-header h2 { color:var(--text); }
 
